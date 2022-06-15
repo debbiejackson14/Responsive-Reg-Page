@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-size: 16px;
+    background-image: url("bg\ desktop.png");
+    height: 100vh;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    background-blend-mode: overlay;
+    color: white;
+    
+
+}
+
+/* Styling the parent container for the page */
+
+ .regbox { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    position: fixed;
+    top: 20%;
+    left: 20%; 
+
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+/* Giving width to the text (h1 & p tag) before the form */
+.code {
+    width: 50%;
+    
+}
+
+/* Hiding my labels */
+label {
+    display: none;
+}
+/* Giving a width to the entire form */
+.formbox {
+    width: 50%;
+    
+    
+}
+/* Styling my form */
+.form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+/* Styling the 7 days free trial box */
+.freetrial {
+    background-color: hsl(248, 32%, 49%);
+    margin: 0px 0px 12px 0px; 
+    padding: 15px; 
+    text-align: center; 
+    font-size: small;
+    width: initial;
+    border-radius: 3px;
+    box-shadow: 0px 2px 8px 0px  hsl(240, 1%, 50%);
+}
+
+
+
+.days {
+    font-weight: 600;
+    font-size: small;
+}
+
+/* Styling my input field */
+.inputs {
+    display: block;
+    border: 1px solid hsl(246, 25%, 77% );
+    border-radius: 5px;
+    width: 95%; 
+    margin: 0px 0px 20px 20px;
+    padding: 9px; 
+    outline: none;
+
+}
+
+/* Styling the active state of my input field */
+input:required:invalid { 
+    outline: none;
+    border: 1px solid hsl(0, 100%, 74%);
+    background-image: url('icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    
+  
+}
+
+input:invalid+ .fname {
+    display:inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+  
+
+}
+
+input:invalid+ .lname {
+    display:inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+  
+
+}
+
+input:invalid+ .email {
+    display:inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px;
+  
+
+}
+
+input:invalid+ .password {
+    display:inline;
+    color: hsl(0, 100%, 74%);
+    float: right;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 12px; 
+
+}
+
+ ::placeholder  { 
+    color:  black  !important;
+    font-weight: 500; 
+    padding-left: 10px; 
+}
+
+#jonathan::placeholder {
+    font-weight: 600; 
+} 
+
+
+/* Styling my button */
+
+button {
+    color: white;
+    background-color: hsl(154, 59%, 51%);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    width: 95%;
+    margin: 10px 0px 20px 20px;
+    padding: 10px;
+    box-shadow: 0.5px 0.5px 5px 0px hsl(249, 10%, 26%) ;
+    
+    
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* Styling the disclaimer text after the button */
+.clicking {
+    color: hsl(246, 25%, 77%);
+    font-size: small;
+    text-align: center;
+}
+
+.services {
+   color:  hsl(0, 100%, 74%) ;
+   font-weight: 600;
+}
+
+
+
+
+/* ::-webkit-input-placeholder {
+    color: black; 
+}
+:-ms-input-placeholder {
+    color: black;
+}
+
+::-moz-placeholder {
+    color: black;
+    opacity: 1; 
+}
+
+:-moz-placeholder {
+    color: black;
+    opacity: 1;
+  }
+
+ /* input:active+span:before{ 
+    color: red;
+    background-color: red ;
+    border: 2px solid hsl(0, 100%, 74%) ;
+
+ } */
+
+
+  
+/* .email[data-error] .inputs { 
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+}
+
+.email[data-error]::after {
+    content: attr(data-error);
+    font-size: 0.85em;
+    color: hsl(0, 100%, 74%);
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+    float: right; 
+
+}
+
+ 
+
+/* RESPONSIVE STYLINGS */
+
+
+@media screen and (max-width:1440px) {
+    .regbox { 
+       width: 70%;
+
+    }
+
+    h1 {
+        margin-bottom: 15px; 
+    }
+
+    p {
+        font-size: 12px;
+         margin-right: 20px; 
+    }
+    
+    .freetrial {
+        margin: 0px 0px 12px 0px; 
+        padding: 20px; 
+        text-align: center; 
+        font-size: 16px;
+    }
+    
+    .formbox {
+        width: 70%;
+    }
+    
+    .days {
+        font-size: 16px;
+    }
+    
+    .inputs {
+        width: 95%; 
+        margin: 0px 0px 20px 20px;
+        padding: 10px;  
+    
+    }
+
+    
+}
+
+@media screen and (max-width: 375px) {
+
+    body {
+        background-image: url("bg\ mobile.png")
+    }
+
+
+    .regbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    
+        position: relative;
+        
+       
+    }
+
+    .code {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 100px;
+        margin-right: 100px;
+    }
+
+    
+
+    p {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 50px;
+    }
+
+    .freetrial {
+        padding: 18px; 
+        text-align: center; 
+        font-size: 15px;
+        width: 100%;
+        border-radius: 3px;
+    }
+    
+    .days {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+     .formbox { 
+        width: 90%;
+        height: 50%;
+        margin-right: 100px;
+        
+    }
+    .form {
+        border-radius: 10px;
+        padding: 30px; 
+        width: 100%;
+        height: 100%;
+        
+    
+    }
+    .inputs {
+        border: 1px solid hsl(246, 25%, 77% );
+        border-radius: 5px;
+        height: 40px;   
+        width: 100%;  
+        margin: 0px 0px 20px 0px; 
+        padding: 15px; 
+  
+}
+
+button {
+    width: inherit;
+    margin: auto;
+    padding: 10px;
+}
+
+    .clicking {
+        
+        font-size: 10px;
+        margin: 5px;
+    }
+}
+
+
+    
+   
+
+       
+  
