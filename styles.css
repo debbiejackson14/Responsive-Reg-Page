@@ -232,14 +232,12 @@ button:hover {
     display: block;
     float: right; 
 
-}
+} /*
+
+
 
  
-
-/* RESPONSIVE STYLINGS */
-
-
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
     .regbox { 
        width: 70%;
 
@@ -361,7 +359,86 @@ button {
         font-size: 10px;
         margin: 5px;
     }
-}
+} */
+
+/* RESPONSIVE STYLES */
+
+@media (min-width: 375px) and (max-width: 600px) {
+    body {
+      background-image: url("bg\ mobile.png");
+    }
+  
+    .regbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+    }
+  
+    .code {
+      width: 100%;
+      font-size: 14px;
+      margin-top: 100px;
+      margin-right: 100px;
+    }
+  
+    p {
+      font-size: 13px;
+      font-weight: 500;
+      width: 90%;
+    }
+  
+    .freetrial {
+      padding: 18px;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 10px;
+      width: 100%;
+      border-radius: 3px;
+    }
+  
+    .days {
+      font-weight: 600;
+      font-size: 12px;
+    }
+    .formbox {
+      width: 100%;
+      height: 50%;
+      margin-right: 100px;
+    }
+    .form {
+      border-radius: 10px;
+      padding: 30px;
+      width: 100%;
+      height: 100%;
+    }
+  
+    input:required:invalid {
+  background-image: none;
+    }
+  
+    input:invalid + .fname {
+      display: none;
+    }
+  
+    input:invalid + .lname {
+      display: none;
+    }
+  
+    input:invalid + .email {
+      display: none;
+    }
+  
+    input:invalid + .password {
+      display: none;
+    }
+  
+    
+  
+    
+    }
+  
 
 
     
