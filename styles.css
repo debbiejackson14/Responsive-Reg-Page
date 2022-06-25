@@ -166,7 +166,165 @@ button:hover {
   font-weight: 600;
 }
 
-/* ::-webkit-input-placeholder {
+/* RESPONSIVE STYLES */
+
+@media (min-width: 375px) and (max-width: 600px) {
+  body {
+    background-image: url("bg\ mobile.png");
+  }
+
+  .regbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    left: 15%;
+    position: relative;
+  }
+
+  .code {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  h1 {
+    width: 70%;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 500;
+    margin-right: 130px;
+  }
+
+  .freetrial {
+    padding: 25px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    border-radius: 8px;
+  }
+
+  .days {
+    font-weight: 600;
+    font-size: 15px;
+    display: block;
+  }
+  .formbox {
+    width: 90%;
+    margin-right: 100px;
+  }
+  .form {
+    border-radius: 10px;
+    padding: 30px;
+    width: 90%;
+  }
+
+  .inputs {
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+    padding: 15px;
+  }
+
+  ::placeholder {
+    color: rgba(39, 39, 46, 0.925) !important;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+
+  input:required:invalid {
+    background-image: none;
+    outline: none;
+    border: 2px solid hsl(246, 25%, 77%);
+  }
+
+  input:invalid + .fname {
+    display: none;
+  }
+
+  input:invalid + .lname {
+    display: none;
+  }
+
+  input:invalid + .email {
+    display: none;
+  }
+
+  input:invalid + .password {
+    display: none;
+  }
+
+  button {
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px 0px 20px 0px;
+  }
+
+  .clicking {
+    color: hsl(246, 25%, 77%);
+    font-size: small;
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1400px) {
+  .regbox {
+    height: 100vh;
+    width: 70%;
+    top: 5%;
+    left: 20%;
+  }
+
+  code {
+    width: 30%;
+  }
+
+  h1 {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .freetrial {
+    margin: 0px 0px 12px 0px;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .formbox {
+    width: 70%;
+  }
+
+  .days {
+    font-size: 16px;
+  }
+
+  .inputs {
+    width: 95%;
+    margin: 0px 0px 20px 20px;
+    padding: 10px;
+  }
+}
+
+
+
+
+
+
+
+/*  CODE THAT I WLL LIKE TO COME BACK TO. NOT PART OF THE SUBMITTED TASK. THANK YOU
+
+::-webkit-input-placeholder {
     color: black; 
 }
 :-ms-input-placeholder {
@@ -332,128 +490,3 @@ button {
         margin: 5px;
     }
 } */
-
-/* RESPONSIVE STYLES */
-
-@media (min-width: 375px) and (max-width: 500px) {
-  body {
-    background-image: url("bg\ mobile.png");
-  }
-
-  .regbox {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-  }
-
-  .code {
-    width: 100%;
-    margin-top: 100px;
-    text-align: center;
-  }
-
-  h1 {
-    width: 70%;
-    font-size: 30px;
-  }
-
-  p {
-    font-size: 15px;
-    font-weight: 500;
-    margin-right: 130px;
-  }
-
-  .freetrial {
-    padding: 28px;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 10px;
-    width: 90%;
-    border-radius: 8px;
-  }
-
-  .days {
-    font-weight: 600;
-    font-size: 15px;
-  }
-  .formbox {
-    width: 90%;
-    margin-right: 100px;
-  }
-  .form {
-    border-radius: 10px;
-    padding: 30px;
-    width: 90%;
-    
-  }
-
-  .inputs {
-    width: 100%;
-    margin: 0px 0px 20px 0px;
-    padding: 15px;
-    
-  }
-
-  ::placeholder {
-    color:  rgba(39, 39, 46, 0.925) !important;
-    font-weight: 500;
-    padding-left: 10px;
-    font-size: 15px;
-  }
-
-  input:required:invalid {
-    background-image: none;
-    outline: none;
-    border: 1px solid hsl(246, 25%, 77% );
-  }
-
-  input:invalid + .fname {
-    display: none;
-   
-  }
-
-  input:invalid + .lname {
-    display: none;
-  }
-
-  input:invalid + .email {
-    display: none;
-  }
-
-  input:invalid + .password {
-    display: none;
-  }
-
-  button {
-
-    border-radius: 5px;
-    width: 100%;
-    margin: 10px 0px 20px 0px;
-  }
-
-  .clicking {
-    color: hsl(246, 25%, 77%);
-    font-size: small;
-    width: 100%;
-    
-  }
-
-  @media (min-width: 501px) and (max-width: 1400px) {
-
-    .regbox {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-    
-
-        
-       
-    }
-
-
-  }
-}
